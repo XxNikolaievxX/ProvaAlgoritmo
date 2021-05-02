@@ -1,0 +1,26 @@
+programa {
+    funcao inicio() {
+        inteiro num1
+        inteiro chance = 1
+        inteiro segredo = 93
+        logico correto = falso
+
+              //escreva("Entre com um numero: ")
+                //leia(n1)
+
+            enquanto(correto == falso e chance <=10){
+                escreva("TENTE A SORTE COM UM NÚMERO: \n")
+                leia(num1)
+
+                se(num1==segredo){
+                    escreva("VOCÊ DESCOBRIU O SEGREDO NA " + chance + " TENTATIVA,EXCEPCIONAL! \n")
+                            correto=verdadeiro
+                }senao se(num1<segredo){
+                    escreva(num1 + " É MENOR QUE O SEGREDO! \n")
+                }senao{
+                    escreva(num1 + " É MAIOR QUE O SEGREDO! \n")
+                }
+                chance++
+            }
+    }
+}
